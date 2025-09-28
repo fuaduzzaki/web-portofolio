@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portofolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <nav id="desktop-nav">
+      <div class="logo"><img src="./web-portofolio-assets/white-hacker-male-svgrepo-com.svg" alt="Logo" class="logo"></div>
+      <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience and Skillset</a></li>
+            <li><a href="#certificates">Ceritificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+  </nav>
+  <nav id="hamburger-nav">
+      <div class="logo"><img src="./web-portofolio-assets/white-hacker-male-svgrepo-com.svg" alt="Logo" class="logo"></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience and Skillset</a></li>
+          <li><a href="#certificates" onclick="toggleMenu()">Ceritificates</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+  </nav>
+  <section id="profile">
+      <div class="section__pic-container-1">
+          <img src="./web-portofolio-assets/RED_BG.png" alt="Fuaduzzaki">
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">Hello I'm</p>
+        <h1 class="title">Fuaduzzaki</h1>
+        <p class="section_text_p2">Freshman College Student</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./Assets/resume.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+            <img 
+              src="./Assets/linkedin.png" 
+              alt="My LinkedIn Profile"
+              class="icon" 
+              onclick="location.href='https://linkedin.com/in/fuaduzzaki/'">
+            <img 
+              src="./Assets/github.png" 
+              alt="My Github Profile"
+              class="icon" 
+              onclick="location.href='https://github.com/fuaduzzaki'">
+        </div>
+      </div>
+  </section>
+  <section id="about">
+    <p class="section_text_p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container-2">
+        <img 
+          src="./web-portofolio-assets/PIC.png" 
+          alt="Profile Picture" 
+          class="about-pic"
+        />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./Assets/experience.png" alt="Experience icon" class="icon">
+            <h3>Experience</h3>
+            <p>1+ years <br />Computer Olympiad</p>
+          </div>
+          <div class="details-container">
+            <img src="./Assets/education.png" alt="Education icon" class="icon">
+            <h3>Education</h3>
+            <p>High School in SMAN 10 Fajar Harapan Banda Aceh<br />Freshman IT Student in President University</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            A motivated individual with a deep passion for Artificial Intelligence and its potential to solve real-world problems. 
+            Possesses intermediate-level skills in Python, HTML, CSS, and JavaScript, with a solid foundation for developing and building 
+            applications. Complemented by creative abilities in basic editing, and driven to learn and grow in the tech industry.
+          </p>
+        </div> 
+      </div>
+    </div>
+    <img src="./Assets/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'">
+  </section>
+  <section id="experience">
+    <p class="section_text_p1">Explore My</p>
+    <h1 class="title">Experience and Skillset</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Skillset</h2>
+          <div class="article-container">
+            <article>
+              <img src="./web-portofolio-assets/html-5-svgrepo-com.svg" 
+              alt="Experience icon"
+              class="icon"
+              >
+              <div>
+                <h3>HTML</h3>
+                <p>Intermidiate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./web-portofolio-assets/css-3-svgrepo-com.svg" 
+              alt="Experience icon"
+              class="icon"
+              >
+              <div>
+                <h3>CSS</h3>
+                <p>Intermidiate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./web-portofolio-assets/javascript-svgrepo-com.svg" 
+              alt="Experience icon"
+              class="icon"
+              >
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermidiate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./web-portofolio-assets/python-svgrepo-com.svg"
+              alt="Experience icon"
+              class="icon"
+              >
+              <div>
+                <h3>Python</h3>
+                <p>Intermidiate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./web-portofolio-assets/adobe-premiere-svgrepo-com.svg" 
+              alt="Experience icon"
+              class="icon"
+              >
+              <div>
+                <h3>Adobe Premiere Pro</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./web-portofolio-assets/terminal-svgrepo-com.svg" 
+              alt="Experience icon"
+              class="icon"
+              >
+              <div>
+                <h3>Prompt Engineering</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Experience</h2>
+          <div class="article-container">
+
+            <article>
+              <img src="./Assets/checkmark.png" 
+              alt="Experience icon"
+              class="icon"
+              >
+              <div>
+                <h3>Data Science Competition - Finalist</h3>
+                <p>
+                  The Competition was held in 2022 by Universitas Syiah Kuala.
+                </p>
+              </div>
+            </article>
+            <article>
+              <img src="./Assets/checkmark.png" 
+              alt="Experience icon"
+              class="icon"
+              >
+              <div>
+                <h3>Olimpiade Sains Indonesia - Silver Medalist</h3>
+                <p>
+                  The Competition was held in 2020 by POSI.
+                </p>
+              </div>
+            </article>
+            <article>
+              <img src="./Assets/checkmark.png" 
+              alt="Experience icon"
+              class="icon"
+              >
+              <div>
+                <h3>Pascal - Committee</h3>
+                <p>
+                  The event was held in 2022 by SMAN 10 Fajar Harapan Banda Aceh
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img 
+      src="./Assets/arrow.png" 
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#certificates'"
+    />
+  </section>
+  <section id="certificates">
+    <p class="section_text_p1">Browse My Recent</p>
+    <h1 class="title">Ceritificates</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+        <div class="article-containers">
+        <img 
+        src="./web-portofolio-assets/Prompt-Engineering.png" 
+        alt="Ceritificate 1"
+        class="certificate-img"
+        />
+      </div>
+      <h2 class="experience-sub-title certificate-title">Prompt Engineering untuk Software Developer</h2>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-containers">
+        <img 
+        src="./web-portofolio-assets/Data Science Competition-1.png" 
+        alt="Ceritificate 1"
+        class="certificate-img"
+        />
+      </div>
+      <h2 class="experience-sub-title certificate-title">Data Science Competition</h2>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-containers">
+        <img 
+        src="./web-portofolio-assets/PIAGAM OSI FINAL KOMPUTER-1.png" 
+        alt="Ceritificate 1"
+        class="certificate-img"
+        />
+      </div>
+      <h2 class="experience-sub-title certificate-title">Olimpiade Sains Indonesia</h2>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-containers">
+        <img 
+        src="./web-portofolio-assets/Generative-AI.png" 
+        alt="Ceritificate 1"
+        class="certificate-img"
+        />
+      </div>
+      <h2 class="experience-sub-title certificate-title">Belajar Penggunaan Generative AI</h2>
+      </div>
+      </div>   
+    </div>
+    <img 
+      src="./Assets/arrow.png" 
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
+    />
+  </section>
+  <section id="contact">
+    <p class="section_text_p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img 
+          src="./Assets/email.png" 
+          alt="Email icon" 
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:alfialfi215@gmail.com">alfialfi215@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img 
+          src="./Assets/linkedin.png" 
+          alt="LinkedIn icon" 
+          class="icon contact-icon"
+        />
+        <p><a href="https://linkedin.com/in/fuaduzzaki/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience and Skillset</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2025 Fuaduzzaki. All Rights Reserved</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
